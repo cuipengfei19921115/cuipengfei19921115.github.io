@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		
+		// function fn(b) {
+  //       var a = 10;
+  //       return function () {
+  //        alert(a+b);
+  //       }
+  //     }
+  //       fn(15)();
+   // function Person(name,age) {
+   //    	this.name = name;
+   //    	this.age = age;
+   //    	this.sayHi = function () {
+   //    		console.log(this.name + ': hello');
+   //    	}
+   //    }
+   //      // var p1 = new Person('zs',18);
+   //      // var p2 = p1;
+   //      // p1.name = '一个';
+   //      // alert(p2.name);
+   //      var Person1 = new Person('张三' , '18');
+        
+   //      console.log(Person1);
+   //      //   函数名   调用
+   //       Person1.sayHi();
+   //     //    遍历  对象
+   //      // delete Person1['sayHi'];
+   //      for( var k in Person1){
+   //      	//    先输出
+   //      	console.log(k + '-----' + Person1[k]);
+   //      }
+
+        //    自定义构造函数
+        function Teacher(name,age,sex,supject) {
+        	this.name = name;
+        	this.age  = age;
+        	this.sex = sex;
+        	this.supject = function(){
+        		console.log(this.name + ':It&&Techer')
+        	}
+        }
+        var  Teacher1 = new Teacher ('小高', '24', 'pink');
+        var  Teacher2 = new Teacher('小孙', '25', 'hotpink');
+        var  Teacher3 = new Teacher('小新', '23', 'purplr');
+        console.log(Teacher1);
+        Teacher1.supject();
+        console.log(Teacher2);
+        Teacher2.supject();
+        console.log(Teacher3);
+        Teacher3.supject();
+        //    自定义 函数
+        function arlimao(name,age,sex){
+        	this.name = name;
+        	this.age = age;
+        	this.sex = sex;
+        	this.blood = blood;
+        	this.run = function(){
+        		console.log(this.name + '飞速的跑。快吓死了');
+        	}
+        	this.say = function(){
+        		console.log(this.name + '旺旺旺');
+        	}
+        }
+        var arlimao1 = new arlimao()
+
+//   随机  5个数
+  function  getSum(max,min){
+  	return Math.floor(Math.random *(max-min+1)+min);
+  }
+  vafr arr  = [];
+  for( var i = 0;i < 6;i++){
+  	arr[arr.length] = getSum(1, 100);
+  }
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
